@@ -1,5 +1,4 @@
 <cc_config>
-   <options>
-       <report_results_immediately>1</report_results_immediately>
-   </options>
+   <log_flags><app_msg_receive>1</app_msg_receive></log_flags>
+   <options><report_results_immediately>1</report_results_immediately></options>
 </cc_config>
